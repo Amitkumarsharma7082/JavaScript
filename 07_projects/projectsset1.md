@@ -1,12 +1,12 @@
 # Projects related to DOM
 
-## project link
+## Project link
 
 [Click here]()
 
 # Solution code
 
-## project 1 background color change
+## Project 1 Background color change
 
 ```javascript
 const buttons = document.querySelectorAll(".button");
@@ -37,7 +37,7 @@ buttons.forEach(function (button) {
 });
 ```
 
-## project 2 BMI Calculator
+## Project 2 BMI Calculator
 
 ```javascript
 const form = document.querySelector("form");
