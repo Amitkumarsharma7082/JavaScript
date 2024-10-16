@@ -6,7 +6,7 @@
 
 # Solution code
 
-## Project 1 Background color change
+## Project-1 Background color change
 
 ```javascript
 const buttons = document.querySelectorAll(".button");
@@ -37,7 +37,7 @@ buttons.forEach(function (button) {
 });
 ```
 
-## Project 2 BMI Calculator
+## Project-2 BMI Calculator
 
 ```javascript
 const form = document.querySelector("form");
@@ -78,4 +78,27 @@ form.addEventListener("submit", function (e) {
   //   when i click the get value store in the form but OUT of define the value
   //   when user reload the page automatically default value > null selected
 });
+```
+
+## Project-3 Digital Clock
+
+```javascript
+const clock = document.getElementById("clock");
+// const clock = document.querySelector('#clock')
+
+// Update on run time
+// setInterval is that run program continuosly time we give
+const options = {
+  hour: "numeric",
+  minute: "numeric",
+  second: "numeric",
+  hour12: true, // 12-hour format
+  timeZone: "Asia/Kolkata", // Indian Standard Time
+};
+setInterval(function () {
+  let date = new Date();
+  // console.log(date.toLocaleDateString());
+  // Node(Document) Update every 1 second
+  clock.innerHTML = date.toLocaleTimeString("en-IN", options);
+}, 1000);
 ```
